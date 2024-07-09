@@ -11,6 +11,8 @@
 		87192CB72C36422700C30AA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87192CB62C36422700C30AA7 /* ContentView.swift */; };
 		87192CB92C36422900C30AA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87192CB82C36422900C30AA7 /* Assets.xcassets */; };
 		87192CBC2C36422900C30AA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87192CBB2C36422900C30AA7 /* Preview Assets.xcassets */; };
+		87FDD2592C3CC5F3009F4540 /* Answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FDD2582C3CC5F3009F4540 /* Answers.swift */; };
+		87FDD25B2C3CC6CC009F4540 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FDD25A2C3CC6CC009F4540 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		87192CB62C36422700C30AA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		87192CB82C36422900C30AA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87192CBB2C36422900C30AA7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		87FDD2582C3CC5F3009F4540 /* Answers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answers.swift; sourceTree = "<group>"; };
+		87FDD25A2C3CC6CC009F4540 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				87192CB62C36422700C30AA7 /* ContentView.swift */,
 				87192CB82C36422900C30AA7 /* Assets.xcassets */,
 				87192CBA2C36422900C30AA7 /* Preview Content */,
+				87FDD2582C3CC5F3009F4540 /* Answers.swift */,
+				87FDD25A2C3CC6CC009F4540 /* API.swift */,
 			);
 			path = gibdd;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				87192CB72C36422700C30AA7 /* ContentView.swift in Sources */,
+				87FDD2592C3CC5F3009F4540 /* Answers.swift in Sources */,
+				87FDD25B2C3CC6CC009F4540 /* API.swift in Sources */,
 				87192CB52C36422700C30AA7 /* gibddApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

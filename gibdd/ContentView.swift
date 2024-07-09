@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var answers = [Answers]()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            List(answers) { answer in
+                VStack {
+                    Text(answer.question)
+                }
+            }.onAppear() {
+                apiCall().getAnswers { (answers) in
+                    self.answers = answers
+                }
+            }
+            .navigationTitle("Вопросы")
         }
-        .padding()
     }
 }
 
