@@ -41,6 +41,7 @@ struct AnswersView: View {
 struct AnswerView: View {
     @State var answer: Answers
     @State private var selectedAnswerId: UUID? = nil
+    @State private var isCorrect: Bool = true
     var body: some View {
         NavigationView {
             VStack {
@@ -48,8 +49,19 @@ struct AnswerView: View {
                 List(answer.answers) { _answer in
                     Text(_answer.answerText).onTapGesture {
                         selectedAnswerId = _answer.id
+                        if _answer.isCorrect {
+                            isCorrect = true
+                        } else {
+                            isCorrect = false
+                        }
                     }
                     .listRowBackground(selectedAnswerId == _answer.id ? (_answer.isCorrect ? Color.green : Color.red) : Color.white)
+                }
+                if isCorrect == false {
+                    VStack {
+                        Text(answer.correctAnswer)
+                        Text(answer.answerTip)
+                    }
                 }
             }
         }
