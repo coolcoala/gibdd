@@ -8,8 +8,8 @@
 import Foundation
 
 class apiCall {
-    func getAnswers(completion:@escaping ([Answers]) -> ()) {
-        let url = URL(string: "https://raw.githubusercontent.com/etspring/pdd_russia/master/questions/A_B/tickets/Билет 1.json")!
+    func getAnswers(completion:@escaping ([Answers]) -> (), num: Int) {
+        let url = URL(string: "https://raw.githubusercontent.com/etspring/pdd_russia/master/questions/A_B/tickets/Билет \(num).json")!
         
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             let answers = try! JSONDecoder().decode([Answers].self, from: data!)

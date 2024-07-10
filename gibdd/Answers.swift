@@ -29,7 +29,9 @@ struct Answers: Codable, Identifiable {
 }
 
 // MARK: - Answer
-struct Answer: Codable {
+struct Answer: Codable, Identifiable {
+    let id = UUID()
+    
     let answerText: String
     let isCorrect: Bool
 
