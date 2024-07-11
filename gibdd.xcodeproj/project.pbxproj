@@ -55,10 +55,10 @@
 		87192CB32C36422700C30AA7 /* gibdd */ = {
 			isa = PBXGroup;
 			children = (
+				87192CBA2C36422900C30AA7 /* Preview Content */,
 				87192CB42C36422700C30AA7 /* gibddApp.swift */,
 				87192CB62C36422700C30AA7 /* ContentView.swift */,
 				87192CB82C36422900C30AA7 /* Assets.xcassets */,
-				87192CBA2C36422900C30AA7 /* Preview Content */,
 				87FDD2582C3CC5F3009F4540 /* Answers.swift */,
 				87FDD25A2C3CC6CC009F4540 /* API.swift */,
 			);

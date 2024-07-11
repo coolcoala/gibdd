@@ -46,6 +46,13 @@ struct AnswerView: View {
         NavigationView {
             VStack {
                 Text(answer.question)
+                if answer.image != "./images/no_image.jpg" {
+                    AsyncImage(url: URL(string: "https://raw.githubusercontent.com/etspring/pdd_russia/master/\(answer.image)")) { image in
+                        image.resizable().aspectRatio(contentMode: .fit)
+                    } placeholder: {
+                        ProgressView()
+                    }
+                }
                 List(answer.answers) { _answer in
                     Text(_answer.answerText).onTapGesture {
                         selectedAnswerId = _answer.id
